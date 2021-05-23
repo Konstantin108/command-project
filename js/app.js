@@ -92,8 +92,7 @@ class Quiz {
     }
 
     _checkCorrectAnswer(answer) {
-        if (-
-                answer ==
+        if (answer ==
             this.questions[this.currentQuestion - 1].correctAnswer.toLowerCase()
         ) {
             this.correctAnswers++;
@@ -102,14 +101,10 @@ class Quiz {
 
     _showResult() {
         let resultStatement;
-        if (this.correctAnswers == 0) {
-            resultStatement = this.results[0];
-        }
-        if (this.correctAnswers <= 4 && this.correctAnswers > 0) {
+        if (this.correctAnswers == this.results.length) {
             resultStatement = this.results[1];
-        }
-        if (this.correctAnswers == 5) {
-            resultStatement = this.results[2];
+        } else {
+            resultStatement = this.results[0];
         }
         let block = `
       <div class="result">
@@ -120,7 +115,7 @@ class Quiz {
         <div class="result__text">
           <h1>${resultStatement}</h1>
           <p>Ваш результат: ${this.correctAnswers}</p>
-          <p class="reload">Попробовать еще раз</p>
+          <p class="reload">Повторить</p>
         </div>
       </div>
       `;

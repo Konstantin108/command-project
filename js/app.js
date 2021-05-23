@@ -1,6 +1,6 @@
 "use strict";
 
-const API = 'https://raw.githubusercontent.com/Konstantin108/command-project/master/responses/data.json';
+const API = 'https://raw.githubusercontent.com/Konstantin108/command-projeesponses/data.json';
 
 class Quiz {
     constructor(api, container = ".main") {

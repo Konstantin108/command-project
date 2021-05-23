@@ -1,0 +1,31 @@
+{
+  "title": "Виртуальная школа",
+  "img": "https://i.ytimg.com/vi/71xs__dp6ag/maxresdefault.jpg",
+  "lead": "Непройденные релизы",
+  "questions": [
+    {
+      "id": "1",
+      "question": "Где ум, там и ...",
+      "answerA": "деньги",
+      "answerB": "голова",
+      "answerC": "толк",
+      "answerD": "шпаргалка",
+      "correctAnswer": "C",
+      "questImg": "https://code.s3.yandex.net/web-code/entrance-test/4.png"
+    },
+    {
+      "id": "2",
+      "question": "Задрал нос — и кочергой не ...",
+      "answerA": "загнёшь",
+      "answerB": "опустишь",
+      "answerC": "убьешь",
+      "answerD": "достанешь",
+      "correctAnswer": "D",
+      "questImg": "https://code.s3.yandex.net/web-code/entrance-test/4.png"
+    }
+  ],
+  "results": [
+    "Вы ответили неправильно",
+    "Материал успешно изучен"
+  ]
+}

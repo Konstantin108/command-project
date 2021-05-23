@@ -5,7 +5,7 @@ const API = 'https://raw.githubusercontent.com/Konstantin108/command-project/mas
 class Quiz {
     constructor(api, container = ".main") {
         this.title = "";
-        // this.img = "";
+        this.img = "";
         this.lead = "";
         this.questions = [];
         this.totalQuestions = 0;
@@ -21,7 +21,7 @@ class Quiz {
             .then((response) => response.json())
             .then((response) => {
                 this.title = response.title;
-                // this.img = response.img;
+                this.img = response.img;
                 this.lead = response.lead;
                 this.questions = response.questions;
                 this.totalQuestions = response.questions.length;
@@ -39,11 +39,11 @@ class Quiz {
     _render(question) {
         let block = `
        <h1 class="quiz__title">${this.title}</h1>
-      // <img
-      //   class="quiz__image"
-      //   src="${this.img}"
-      //   alt="quiz-image"
-      // />
+      <img
+        class="quiz__image"
+        src="${this.img}"
+        alt="quiz-image"
+      />
       <p class="quiz__lead">${this.lead}</p>
       <section class="question">
         <p class="question__count"> ${this.currentQuestion} из ${this.totalQuestions}</p>
@@ -113,10 +113,10 @@ class Quiz {
         }
         let block = `
       <div class="result">
-        // <img
-        //   src="${this.img}"
-        //   alt="result image"
-        // />
+        <img
+          src="${this.img}"
+          alt="result image"
+        />
         <div class="result__text">
           <h1>${resultStatement}</h1>
           <p>Ваш результат: ${this.correctAnswers}</p>
